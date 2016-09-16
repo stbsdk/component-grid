@@ -1,23 +1,30 @@
-/* spa-component-grid: release */
-.component.grid {
-    background-color: #333; }
-    .component.grid table {
+.stb-component-grid {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #333;
+    outline: 1px dashed #005000;
+    outline-offset: -1px; }
+    .stb-component-grid.hidden {
+        display: none; }
+    .stb-component-grid table {
         width: 100%;
         table-layout: fixed; }
-        .component.grid table td.item {
+        .stb-component-grid table td.item {
             cursor: pointer;
             padding: 6px 12px;
             vertical-align: middle;
             text-align: center; }
-        .component.grid table td.item.mark {
+        .stb-component-grid table td.item.mark {
             color: black;
             background-color: green; }
-        .component.grid table td.item.focus {
+        .stb-component-grid table td.item.focus {
             color: black;
             background-color: orange; }
-        .component.grid table td.item.focus.mark {
+        .stb-component-grid table td.item.focus.mark {
             color: white;
             background-color: #AE7200; }
-        .component.grid table td.item.disable {
+        .stb-component-grid table td.item.disable {
             color: grey;
             background-color: #111; }
+    .stb-component-grid.focus {
+        outline: 1px dashed red; }
